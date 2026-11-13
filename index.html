@@ -3,212 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pi Kappa Alpha | Alpha Mu Chapter | University of Georgia</title>
+<title>Home | Pi Kappa Alpha, Alpha Mu Chapter at UGA</title>
 <meta name="description" content="Pi Kappa Alpha, Alpha Mu Chapter at the University of Georgia. Chartered 1908. 1,800+ brothers, steps from Sanford Stadium.">
-<style>
-:root{
-  --garnet:#79242F; --garnet-dk:#5A1A23; --gold:#AA9767; --gold-dk:#9E8959;
-  --navy:#323E48; --white:#FFFFFF; --ink:#16181b; --gray:#5c6168; --line:#e4e1da;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
-body{font-family:"Times New Roman",Times,serif;color:var(--ink);background:var(--white);line-height:1.7;font-size:17px}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
-.caps{font-family:"Franklin Gothic Medium","Arial Narrow",Arial,sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:.74rem;font-weight:600}
-.btn{display:inline-block;font-family:"Franklin Gothic Medium","Arial Narrow",Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-size:.78rem;font-weight:600;padding:15px 34px;border:2px solid;transition:.2s}
-.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--white)}
-.btn-gold:hover{background:var(--white);color:var(--garnet)}
-.btn-white{border-color:var(--white);color:var(--white)}
-.btn-white:hover{background:var(--white);color:var(--garnet)}
-.btn-garnet{background:var(--garnet);border-color:var(--garnet);color:var(--white)}
-.btn-garnet:hover{background:var(--white);color:var(--garnet)}
-.ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:18px 0 26px}
-.ornament::before,.ornament::after{content:"";width:70px;height:1px;background:currentColor}
-.ornament span{font-size:.7rem}
-
-/* UTILITY BAR */
-.util{background:var(--navy);color:#cfd5da}
-.util .wrap{display:flex;justify-content:space-between;height:36px;align-items:center;font-size:.64rem}
-.util a:hover{color:var(--gold)}
-.util div{display:flex;gap:24px}
-
-/* HEADER */
-header.top{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:4px solid var(--garnet)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:92px}
-.mark{display:flex;align-items:center;gap:16px}
-.seal{width:60px;height:60px;border-radius:50%;background:var(--garnet);border:3px solid var(--gold);outline:1px solid var(--garnet);outline-offset:3px;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:1.2rem;letter-spacing:1px;flex-shrink:0}
-.mark .name{font-size:1.5rem;color:var(--garnet);line-height:1.1;letter-spacing:.5px}
-.mark .caps{color:var(--gray);font-size:.64rem;margin-top:4px}
-nav ul{display:flex;gap:28px;list-style:none}
-nav a{color:var(--navy);padding:6px 0;border-bottom:2px solid transparent}
-nav a:hover,nav a.active{color:var(--garnet);border-color:var(--gold)}
-.menu-btn{display:none;background:none;border:1px solid var(--garnet);color:var(--garnet);padding:10px 14px;cursor:pointer}
-
-/* HERO */
-.hero{background:var(--garnet);color:var(--white);text-align:center;padding:120px 0 110px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:22px;border:1px solid rgba(170,151,103,.55);pointer-events:none}
-.hero::after{content:"ΠΚΑ";position:absolute;font-size:26rem;color:rgba(255,255,255,.04);top:50%;left:50%;transform:translate(-50%,-52%);white-space:nowrap;letter-spacing:20px}
-.hero > .wrap{position:relative;z-index:1}
-.hero .caps{color:var(--gold)}
-.hero h1{font-size:clamp(2.6rem,6.5vw,4.8rem);font-weight:normal;line-height:1.1;margin-top:18px}
-.hero p{font-size:1.2rem;font-style:italic;max-width:640px;margin:0 auto 40px;opacity:.92}
-.hero .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-
-/* STATS */
-.stats{background:var(--navy);color:var(--white)}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{text-align:center;padding:38px 10px;border-right:1px solid rgba(255,255,255,.12)}
-.stat:last-child{border-right:none}
-.stat b{display:block;font-size:2.6rem;font-weight:normal;color:var(--gold);line-height:1.1}
-.stat .caps{font-size:.66rem;color:#d6dbe0;margin-top:6px}
-
-/* GENERIC */
-section{padding:104px 0}
-.title{text-align:center;margin-bottom:56px}
-.title .caps{color:var(--garnet)}
-.title h2{font-size:2.6rem;font-weight:normal;color:var(--ink);margin-top:12px;line-height:1.2}
-.title p{max-width:640px;margin:0 auto;color:var(--gray);font-size:1.08rem}
-
-/* PRESIDENT */
-.letter{display:grid;grid-template-columns:340px 1fr;gap:70px;align-items:center}
-.frame{border:1px solid var(--gold);padding:10px;background:var(--white);transition:.25s}
-.photo{position:relative;aspect-ratio:4/5;overflow:hidden;background:linear-gradient(160deg,#323E48,#1d252c);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.75);font-style:italic}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
-.photo .init{font-size:3rem;color:var(--gold);letter-spacing:2px;font-style:normal}
-.letter .caps{color:var(--garnet)}
-.letter h2{font-size:2.3rem;font-weight:normal;line-height:1.2;margin:12px 0 22px}
-.letter p{color:#33373c;margin-bottom:16px}
-.drop::first-letter{float:left;font-size:4.2rem;line-height:.85;color:var(--garnet);padding:6px 10px 0 0}
-.sig{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}
-.sig em{font-size:1.5rem;color:var(--garnet)}
-.sig .caps{color:var(--gray);display:block;margin-top:4px;font-size:.66rem}
-
-/* HISTORY */
-.history{background:var(--navy);color:var(--white);text-align:center}
-.history .year{font-size:6rem;color:var(--gold);line-height:1}
-.history h2{font-size:2.3rem;font-weight:normal;margin-top:8px}
-.history p{max-width:720px;margin:0 auto 34px;color:#d6dbe0;font-size:1.1rem}
-
-/* PILLARS */
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.pillar{padding:46px 38px;text-align:center;border-right:1px solid var(--line)}
-.pillar:last-child{border-right:none}
-.num{font-size:.95rem;color:var(--gold);letter-spacing:4px}
-.pillar h3{font-size:1.55rem;font-weight:normal;color:var(--garnet);margin:10px 0 12px}
-.pillar p{color:var(--gray);font-size:1rem}
-
-/* PHILANTHROPY */
-.phil{background:var(--garnet);color:var(--white)}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.phil .photo{aspect-ratio:4/3;border:1px solid var(--gold)}
-.phil .caps{color:var(--gold)}
-.phil h2{font-size:2.4rem;font-weight:normal;margin:12px 0 18px;line-height:1.2}
-.phil p{opacity:.92;margin-bottom:18px}
-.memorial{border-left:3px solid var(--gold);padding:6px 0 6px 20px;font-style:italic;font-size:1.2rem;margin:26px 0 32px}
-
-/* GALLERY */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:6px}
-.g{position:relative;display:flex;align-items:flex-end;padding:18px;color:var(--white);background:linear-gradient(160deg,#323E48,#1d252c);overflow:hidden}
-.g img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.g:nth-child(1){grid-column:span 2;grid-row:span 2;background:linear-gradient(160deg,#79242F,#4a131b)}
-.g:nth-child(4){grid-column:span 2;background:linear-gradient(160deg,#9E8959,#6f5f3b)}
-.g::after{content:"";position:absolute;inset:10px;border:1px solid rgba(255,255,255,.3);z-index:1}
-.g span{font-size:1.25rem;position:relative;z-index:2;text-shadow:0 1px 6px rgba(0,0,0,.5)}
-
-/* EXECUTIVE BOARD */
-.exec{background:#f6f5f2}
-.group{margin-bottom:70px}
-.group:last-child{margin-bottom:0}
-.group-title{display:flex;align-items:center;gap:18px;margin-bottom:36px;color:var(--garnet)}
-.group-title::after{content:"";flex:1;height:1px;background:#d9d4c8}
-.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:34px}
-.board.lead{grid-template-columns:repeat(auto-fit,minmax(240px,280px));justify-content:center}
-.officer{text-align:center}
-.officer .frame{padding:8px;margin-bottom:18px}
-.officer:hover .frame{border-color:var(--garnet);box-shadow:0 10px 26px rgba(121,36,47,.15)}
-.office{color:var(--garnet)}
-.role{display:block;font-style:italic;color:var(--gray);font-size:.95rem;margin:2px 0 8px}
-.officer h3{font-size:1.4rem;font-weight:normal;line-height:1.2}
-.meta{color:var(--gray);font-size:.92rem;margin-top:4px}
-.meta b{color:var(--gold-dk);font-weight:normal}
-
-/* RUSH */
-.rush{background:var(--white);text-align:center;border-top:4px solid var(--garnet);border-bottom:4px solid var(--garnet)}
-.rush h2{font-size:3rem;font-weight:normal;color:var(--garnet);margin-top:12px}
-.rush .caps{color:var(--gold-dk)}
-.rush p{max-width:600px;margin:0 auto 36px;font-size:1.15rem;font-style:italic;color:var(--gray)}
-
-/* GIVE */
-.give{background:#f6f5f2}
-.funds{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.fund{background:var(--white);border:1px solid var(--line);border-top:5px solid var(--garnet);padding:42px 34px;text-align:center;display:flex;flex-direction:column}
-.fund h3{font-size:1.45rem;font-weight:normal;color:var(--garnet);margin-bottom:10px}
-.fund p{color:var(--gray);flex:1;margin-bottom:26px}
-
-/* DIRECTORY */
-.dir{background:var(--navy);color:var(--white);padding:70px 0}
-.dir .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
-.dir h2{font-size:2.1rem;font-weight:normal}
-.dir .caps{color:var(--gold)}
-.dir p{color:#d6dbe0;max-width:560px}
-
-/* FOOTER */
-footer{background:#14181c;color:#9ba3ab;padding:70px 0 30px;font-size:.95rem}
-.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:46px}
-footer .mark .name{color:var(--white);font-size:1.3rem}
-footer .caps{color:var(--gold);margin-bottom:14px;display:block}
-footer li{list-style:none;margin-bottom:8px}
-footer a:hover{color:var(--white)}
-.legal{border-top:1px solid #2a3036;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem}
-
-@media(max-width:980px){
-  .menu-btn{display:block}
-  nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);border-bottom:4px solid var(--garnet)}
-  nav.open{display:block}
-  nav ul{flex-direction:column;gap:0;padding:10px 28px 20px}
-  nav li{border-bottom:1px solid var(--line)}
-  nav a{display:block;padding:14px 0;border:none}
-  .util div:last-child{display:none}
-  .stats .wrap{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:none}
-  .letter,.split,.pillars,.funds,.fgrid{grid-template-columns:1fr}
-  .pillar{border-right:none;border-bottom:1px solid var(--line)}
-  .letter .frame{max-width:320px;margin:0 auto}
-  .gallery{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:520px){
-  .mark .caps{display:none}
-  .mark .name{font-size:1.2rem}
-  .seal{width:48px;height:48px;font-size:1rem}
-  .stat b{font-size:2rem}
-  .gallery{grid-template-columns:1fr}
-  .g:nth-child(1),.g:nth-child(4){grid-column:span 1;grid-row:span 1}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="util"><div class="wrap caps">
   <div><span>145 Greek Park Circle · Athens, Georgia</span></div>
-  <div><a href="#directory">Alumni Directory</a><a href="#">Golf Tournament</a><a href="#">Member Login</a></div>
+  <div><a href="directory.html">Alumni Directory</a><a href="golf.html">Golf Tournament</a><a href="directory.html">Member Login</a></div>
 </div></div>
 
 <header class="top"><div class="wrap">
-  <a href="#" class="mark">
+  <a href="index.html" class="mark">
     <div class="seal">ΠΚΑ</div>
     <div><div class="name">Pi Kappa Alpha</div><div class="caps">Alpha Mu Chapter · University of Georgia</div></div>
   </a>
   <button class="menu-btn caps" type="button" aria-expanded="false" aria-controls="mainnav">Menu</button>
-  <nav id="mainnav"><ul class="caps">
-    <li><a href="#about">About</a></li>
-    <li><a href="#chapter">Chapter</a></li>
-    <li><a href="#exec">Executive Board</a></li>
-    <li><a href="#rush">Recruitment</a></li>
-    <li><a href="#give">Give</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul></nav>
+  <nav id="mainnav"><ul class="caps"><li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="chapter.html">Chapter</a></li><li><a href="executive-board.html">Executive Board</a></li><li><a href="recruitment.html">Recruitment</a></li><li><a href="give.html">Give</a></li><li><a href="golf.html">Golf</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
 </div></header>
 
 <section class="hero"><div class="wrap">
@@ -216,10 +28,7 @@ footer a:hover{color:var(--white)}
   <h1>This Is the House.</h1>
   <div class="ornament"><span>◆</span></div>
   <p>One of the oldest fraternities at the University of Georgia, with more than 1,800 brothers, just steps from Sanford Stadium.</p>
-  <div class="btns">
-    <a href="#rush" class="btn btn-gold">Recruitment</a>
-    <a href="#give" class="btn btn-white">Support Alpha Mu</a>
-  </div>
+  <div class="btns"><a href="recruitment.html" class="btn btn-gold">Rush Pike</a><a href="give.html" class="btn btn-white">Give Now</a></div>
 </div></section>
 
 <div class="stats"><div class="wrap">
@@ -229,7 +38,7 @@ footer a:hover{color:var(--white)}
   <div class="stat"><b>Top 10</b><div class="caps">IFC Academics</div></div>
 </div></div>
 
-<section id="about"><div class="wrap letter">
+<section><div class="wrap letter">
   <div class="frame"><div class="photo"><span class="init">BL</span><img src="images/exec/brady-logan.jpg" alt="Brady Logan" onerror="this.remove()"></div></div>
   <div>
     <div class="caps">A Message from the President</div>
@@ -240,192 +49,58 @@ footer a:hover{color:var(--white)}
   </div>
 </div></section>
 
-<section class="history"><div class="wrap">
+<section class="dark"><div class="wrap center">
   <div class="caps" style="color:var(--gold)">Our Heritage</div>
   <div class="year">1908</div>
-  <h2>One of the First Pi Kappa Alpha Chapters in the Deep South</h2>
+  <h2 style="font-size:2.3rem;font-weight:normal;margin-top:8px">One of the First Pi Kappa Alpha Chapters in the Deep South</h2>
   <div class="ornament"><span>◆</span></div>
-  <p>Chartered more than a century ago, Alpha Mu is among the oldest fraternities at the University of Georgia. Today the chapter resides in Greek Park, steps from Sanford Stadium.</p>
-  <a href="#" class="btn btn-white">Read the Full History</a>
-</div></section>
-
-<section id="chapter"><div class="wrap">
-  <div class="title">
-    <div class="caps">Scholars · Leaders · Athletes · Gentlemen</div>
-    <h2>The Alpha Mu Standard</h2>
-    <div class="ornament"><span>◆</span></div>
-  </div>
-  <div class="pillars">
-    <div class="pillar"><div class="num">I</div><h3>Scholarship</h3><p>A chapter GPA above the all-men's average, ranked within the top ten of the IFC.</p></div>
-    <div class="pillar"><div class="num">II</div><h3>Leadership</h3><p>Brothers serving in SGA, SAC, SMIF, Corsair, and across the University's most respected organizations.</p></div>
-    <div class="pillar"><div class="num">III</div><h3>Service</h3><p>Supporting the Athens-Clarke County Fire Department, ESP, and City Refuge.</p></div>
-  </div>
-</div></section>
-
-<section class="phil"><div class="wrap split">
-  <div class="photo">Philanthropy photograph<img src="images/philanthropy.jpg" alt="Alpha Mu philanthropy event" onerror="this.remove()"></div>
-  <div>
-    <div class="caps">Philanthropy</div>
-    <h2>In Service to Athens Firefighters</h2>
-    <p>Each semester, Alpha Mu's philanthropy events raise thousands of dollars to help Athens-area firefighters recover from burn injuries and to equip them with modern, life-saving equipment.</p>
-    <div class="memorial">Dedicated to the memory of our brother, Conner Strickland.</div>
-    <a href="#give" class="btn btn-gold">Contribute</a>
-  </div>
+  <p style="max-width:720px;margin:0 auto 34px;color:#d6dbe0;font-size:1.1rem">Chartered more than a century ago, Alpha Mu is among the oldest fraternities at the University of Georgia. Today the chapter resides in Greek Park, steps from Sanford Stadium.</p>
+  <a href="about.html" class="btn btn-white">Read the Full History</a>
 </div></section>
 
 <section><div class="wrap">
-  <div class="title">
-    <div class="caps">Life at Alpha Mu</div>
-    <h2>Brotherhood Throughout the Year</h2>
-    <div class="ornament"><span>◆</span></div>
+  <div class="title"><div class="caps">Get Involved</div><h2>The Alpha Mu Standard</h2><div class="ornament"><span>◆</span></div></div>
+  <div class="pillars">
+    <div class="pillar"><div class="num">I</div><h3>Community Service</h3><p>Raising money for the Athens-Clarke County Fire Department and logging service hours for ESP.</p></div>
+    <div class="pillar"><div class="num">II</div><h3>Campus Involvement</h3><p>SGA officers, SAC members, SMIF, Corsair, and more across campus.</p></div>
+    <div class="pillar"><div class="num">III</div><h3>Philanthropy</h3><p>Semesterly events helping Athens-area firefighters recover from burn injuries.</p></div>
   </div>
-  <div class="gallery">
-    <div class="g"><img src="images/gallery/tailgate.jpg" alt="" onerror="this.remove()"><span>Game Day in Greek Park</span></div>
-    <div class="g"><img src="images/gallery/pikes-peak.jpg" alt="" onerror="this.remove()"><span>Pike's Peak</span></div>
-    <div class="g"><img src="images/gallery/formal.jpg" alt="" onerror="this.remove()"><span>Formal · New Orleans</span></div>
-    <div class="g"><img src="images/gallery/beach-weekend.jpg" alt="" onerror="this.remove()"><span>Beach Weekend</span></div>
-  </div>
-  <div style="text-align:center;margin-top:44px"><a href="#" class="btn btn-garnet">View the Gallery</a></div>
+  <div class="center mt"><a href="chapter.html" class="btn btn-garnet">Explore the Chapter</a></div>
 </div></section>
 
-<section id="exec" class="exec"><div class="wrap">
-  <div class="title">
-    <div class="caps">Chapter Leadership</div>
-    <h2>Executive Board</h2>
-    <div class="ornament"><span>◆</span></div>
-  </div>
-
-  <div class="group">
-    <div class="group-title"><span class="caps">Executive Committee</span></div>
-    <div class="board lead">
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">BL</span><img src="images/exec/brady-logan.jpg" alt="Brady Logan" onerror="this.remove()"></div></div>
-        <div class="caps office">SMC</div><span class="role">President</span>
-        <h3>Brady Logan</h3><div class="meta"><b>Fall '23</b> · Athens, GA</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="group">
-    <div class="board">
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">BW</span><img src="images/exec/brayden-wallace.jpg" alt="Brayden Wallace" onerror="this.remove()"></div></div>
-        <div class="caps office">IMC External</div><span class="role">Vice President, External</span>
-        <h3>Brayden Wallace</h3><div class="meta"><b>Fall '24</b> · Woodstock, GA</div>
-      </div>
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">WJ</span><img src="images/exec/will-jarzen.jpg" alt="Will Jarzen" onerror="this.remove()"></div></div>
-        <div class="caps office">IMC Internal</div><span class="role">Vice President, Internal</span>
-        <h3>Will Jarzen</h3><div class="meta"><b>Fall '24</b> · Monroe, GA</div>
-      </div>
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">BA</span><img src="images/exec/brian-askin.jpg" alt="Brian Askin" onerror="this.remove()"></div></div>
-        <div class="caps office">THC</div><span class="role">Treasurer</span>
-        <h3>Brian Askin</h3><div class="meta"><b>Fall '23</b> · Dallas, NJ</div>
-      </div>
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">SS</span><img src="images/exec/spencer-schoenberg.jpg" alt="Spencer Schoenberg" onerror="this.remove()"></div></div>
-        <div class="caps office">MC</div><span class="role">Sergeant-at-Arms</span>
-        <h3>Spencer Schoenberg</h3><div class="meta"><b>Fall '24</b> · Peachtree Corners, GA</div>
-      </div>
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">MS</span><img src="images/exec/matthew-schaefer.jpg" alt="Matthew Schaefer" onerror="this.remove()"></div></div>
-        <div class="caps office">SC</div><span class="role">Secretary</span>
-        <h3>Matthew Schaefer</h3><div class="meta"><b>Fall '24</b> · Perkasie, PA</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="group">
-    <div class="group-title"><span class="caps">Chairmen &amp; Officers</span></div>
-    <div class="board">
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">HT</span><img src="images/exec/hudson-turner.jpg" alt="Hudson Turner" onerror="this.remove()"></div></div>
-        <div class="caps office">Rush Chairman</div><span class="role">Recruitment</span>
-        <h3>Hudson Turner</h3><div class="meta"><b>Fall '25</b> · Woodstock, GA</div>
-      </div>
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">MF</span><img src="images/exec/michael-farrell.jpg" alt="Michael Farrell" onerror="this.remove()"></div></div>
-        <div class="caps office">Social Chairman</div><span class="role">Social Programming</span>
-        <h3>Michael Farrell</h3><div class="meta"><b>Fall '24</b> · Florham Park, NJ</div>
-      </div>
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">SR</span><img src="images/exec/stuart-richardson.jpg" alt="Stuart Richardson" onerror="this.remove()"></div></div>
-        <div class="caps office">Social Chairman</div><span class="role">Social Programming</span>
-        <h3>Stuart Richardson</h3><div class="meta"><b>Fall '25</b> · Atlanta, GA</div>
-      </div>
-      <div class="officer">
-        <div class="frame"><div class="photo"><span class="init">BP</span><img src="images/exec/brayden-paquette.jpg" alt="Brayden Paquette" onerror="this.remove()"></div></div>
-        <div class="caps office">Risk Manager</div><span class="role">Risk Management</span>
-        <h3>Brayden Paquette</h3><div class="meta"><b>Fall '23</b> · Philadelphia, PA</div>
-      </div>
-      </div>
-    </div>
-  </div>
-</div></section>
-
-<section id="rush" class="rush"><div class="wrap">
+<section class="garnet"><div class="wrap cta">
   <div class="caps">Recruitment</div>
-  <h2>Rush Pi Kappa Alpha</h2>
-  <div class="ornament"><span>◆</span></div>
-  <p>Athens gave you something. Meet the brothers of Alpha Mu and discover what this chapter can give you in return.</p>
-  <a href="#" class="btn btn-garnet">Submit Interest Form</a>
+  <h2>Athens Gave You Something.</h2>
+  <p>Meet the brothers of Alpha Mu and discover what this chapter can give you in return.</p>
+  <a href="recruitment.html" class="btn btn-gold">Rush Pike at UGA</a>
 </div></section>
 
-<section id="give" class="give"><div class="wrap">
-  <div class="title">
-    <div class="caps">Support Alpha Mu</div>
-    <h2>Invest in the Next Generation</h2>
-    <div class="ornament"><span>◆</span></div>
-    <p>Your generosity maintains our chapter house, funds scholarships, and sustains a tradition of excellence.</p>
-  </div>
-  <div class="funds">
-    <div class="fund"><h3>Alumni Association</h3><p>Chapter operations, house maintenance, and brotherhood development.</p><a href="#" class="btn btn-garnet">Give Now</a></div>
-    <div class="fund"><h3>Pike Nationals Scholarship</h3><p>The Pi Kappa Alpha scholarship fund supporting brothers nationwide.</p><a href="#" class="btn btn-garnet">Give Now</a></div>
-    <div class="fund"><h3>UGA Foundation Scholarship</h3><p>Support University of Georgia students through the official foundation.</p><a href="#" class="btn btn-garnet">Give Now</a></div>
+<section class="soft"><div class="wrap">
+  <div class="title"><div class="caps">Support Alpha Mu</div><h2>Invest in the Next Generation</h2><div class="ornament"><span>◆</span></div><p>Your generous support helps us maintain our chapter house, provide scholarships, and continue our tradition of excellence.</p></div>
+  <div class="cards">
+    <div class="card"><h3>Alumni Association</h3><p>Chapter operations, house maintenance, and brotherhood development programs.</p><a href="#" class="btn btn-garnet">Give Now</a></div>
+    <div class="card"><h3>Pike Nationals Scholarship</h3><p>The national Pi Kappa Alpha scholarship fund supporting brothers nationwide.</p><a href="#" class="btn btn-garnet">Give Now</a></div>
+    <div class="card"><h3>UGA Foundation Scholarship</h3><p>Support University of Georgia students through the official foundation scholarship program.</p><a href="#" class="btn btn-garnet">Give Now</a></div>
   </div>
 </div></section>
 
-<section id="directory" class="dir"><div class="wrap">
-  <div>
-    <div class="caps">Alumni Directory</div>
-    <h2>Find Your Brothers</h2>
-    <p>Connect with more than 1,800 Alpha Mu brothers for professional networking and lifelong friendship.</p>
-  </div>
-  <a href="#" class="btn btn-gold">Access the Directory</a>
+<section class="dark" style="padding:70px 0"><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap">
+  <div><div class="caps" style="color:var(--gold)">Alumni Directory</div><h2 style="font-size:2.1rem;font-weight:normal">Find Your Brothers</h2><p style="color:#d6dbe0;max-width:560px">Connect with more than 1,800 Alpha Mu brothers for networking and lifelong friendship.</p></div>
+  <a href="directory.html" class="btn btn-gold">Access the Directory</a>
 </div></section>
 
-<footer id="contact"><div class="wrap">
+<footer><div class="wrap">
   <div class="fgrid">
     <div>
-      <div class="mark" style="margin-bottom:16px"><div class="seal" style="width:50px;height:50px;font-size:1rem">ΠΚΑ</div><div class="name">Pi Kappa Alpha</div></div>
+      <div class="mark" style="margin-bottom:16px"><div class="seal">ΠΚΑ</div><div class="name">Pi Kappa Alpha</div></div>
       <p>Alpha Mu Chapter at the University of Georgia. Chartered 1908.</p>
     </div>
     <div><span class="caps">Visit</span><ul><li>145 Greek Park Circle</li><li>Athens, GA 30605</li></ul></div>
     <div><span class="caps">Contact</span><ul><li><a href="mailto:PikeAlphaMu@gmail.com">PikeAlphaMu@gmail.com</a></li><li><a href="#">Instagram</a></li></ul></div>
-    <div><span class="caps">Chapter</span><ul><li><a href="#about">About</a></li><li><a href="#exec">Executive Board</a></li><li><a href="#give">Give</a></li><li><a href="#">Golf</a></li><li><a href="#directory">Directory</a></li></ul></div>
+    <div><span class="caps">Chapter</span><ul><li><a href="about.html">About</a></li><li><a href="executive-board.html">Executive Board</a></li><li><a href="give.html">Give</a></li><li><a href="golf.html">Golf</a></li><li><a href="directory.html">Directory</a></li></ul></div>
   </div>
   <div class="legal"><span>© 2026 Pi Kappa Alpha, Alpha Mu Chapter</span><span>Scholars · Leaders · Athletes · Gentlemen</span></div>
 </div></footer>
-
-<script>
-(function(){
-  var btn=document.querySelector('.menu-btn'), nav=document.getElementById('mainnav');
-  btn.addEventListener('click',function(){
-    var open=nav.classList.toggle('open');
-    btn.setAttribute('aria-expanded',open);
-  });
-  nav.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded',false);});
-  });
-  var links=[].slice.call(nav.querySelectorAll('a'));
-  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
-  window.addEventListener('scroll',function(){
-    var y=window.scrollY+140, cur=-1;
-    secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i;});
-    links.forEach(function(a,i){a.classList.toggle('active',i===cur);});
-  },{passive:true});
-})();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
