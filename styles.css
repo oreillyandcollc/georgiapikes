@@ -43,7 +43,7 @@ nav a:hover,nav a.active{color:var(--garnet);border-color:var(--gold)}
 .hero::after{content:"ΠΚΑ";position:absolute;font-size:26rem;color:rgba(255,255,255,.04);top:50%;left:50%;transform:translate(-50%,-52%);white-space:nowrap;letter-spacing:20px}
 .hero .wrap{position:relative;z-index:1}
 .hero .caps{color:var(--gold)}
-.hero h1{font-size:clamp(2.6rem,6.5vw,4.8rem);font-weight:normal;line-height:1.1;margin-top:18px}
+.hero h1{font-size:clamp(2.4rem,6.3vw,4.6rem);font-weight:normal;line-height:1.1;margin-top:16px}
 .hero p{font-size:1.2rem;font-style:italic;max-width:640px;margin:0 auto 40px;opacity:.92}
 .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
